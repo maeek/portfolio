@@ -1,0 +1,32 @@
+@import 'typo';
+@import 'colors';
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(-45deg, #00091b, $landing);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+%noselect {
+    user-select: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    color: $basic;
+    @extend %koho;
+    @extend %typo-basic;
+}

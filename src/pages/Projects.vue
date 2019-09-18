@@ -8,7 +8,9 @@
     <div class="wrapper projectsWrapper">
       <ul>
         <li>This portfolio</li>
-        <li v-for="p in projects" :key="p.title">{{ p.title }}</li>
+        <li v-for="p in projects" :key="p.title">
+          <a :href="`#projects/${p.title}`">{{ p.title }}</a>
+        </li>
       </ul>
     </div>
   </article>
@@ -65,11 +67,12 @@ export default {
         min-width: 300px;
         li {
           padding: 0.5rem;
-          border: 2px solid lighten($blue, 5);
           margin: 0.2rem 0;
           width: 100%;
-          border-radius: 3px;
-          cursor: pointer;
+          a {
+            color: inherit;
+            text-decoration-color: $orange;
+          }
         }
       }
     }

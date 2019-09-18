@@ -1,12 +1,17 @@
 <template>
   <div>
-    <img draggable="false" src="@/assets/svg/logo.svg" />
+    <img @click="reload" draggable="false" src="@/assets/svg/logo.svg" />
   </div>
 </template>
 
 <script>
 export default {
-  name: "logo"
+  name: "logo",
+  methods: {
+    reload() {
+      location.reload();
+    }
+  }
 };
 </script>
 
@@ -21,6 +26,8 @@ div {
   img {
     height: 2rem;
     width: 2rem;
+    cursor: pointer;
+    @extend %noselect;
   }
 }
 @media screen and (max-width: 480px) {

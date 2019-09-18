@@ -12,7 +12,7 @@
       </a>
       <a
         target="_blank"
-        href="https://linkedin.com/maciej-suchanecki/"
+        href="https://linkedin.com/in/maciej-suchanecki/"
         class="link"
       >
         <img draggable="false" src="@/assets/svg/linkedin.svg" />
@@ -125,6 +125,18 @@ export default {
       }
       h5 {
         margin: 1rem 0 0.5rem 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    justify-content: center;
+    padding: 0 2.5%;
+    .wrapper {
+      &.headerWrapper {
+        margin: 3rem 0;
       }
     }
   }

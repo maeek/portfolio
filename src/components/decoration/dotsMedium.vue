@@ -28,4 +28,10 @@ div {
   }
   @extend %noselect;
 }
+@media screen and (max-width: 480px) {
+  div{
+    left: 0;
+    bottom: -10rem;
+  }
+}
 </style>

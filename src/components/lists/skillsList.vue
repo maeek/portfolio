@@ -34,4 +34,12 @@ export default {
     }
   }
 }
+@media screen and (max-width: 480px) {
+  .technologies {
+    margin: 0;
+    &:nth-of-type(2) {
+      margin-bottom: 2rem;
+    }
+  }
+}
 </style>

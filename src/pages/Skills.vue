@@ -64,6 +64,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     &.headerWrapper {
       margin: 8rem 0;
     }
@@ -73,11 +74,13 @@ export default {
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
+      flex-wrap: wrap;
       .columns {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
         div {
           flex: 1 0 50%;
           &:nth-of-type(2) {
@@ -90,6 +93,7 @@ export default {
 }
 @media screen and (max-width: 480px) {
   .skills {
+    padding: 0 2.5%;
     align-items: flex-start;
     justify-content: flex-start;
     .wrapper {
@@ -98,6 +102,18 @@ export default {
         display: flex;
         justify-content: center;
         margin: 3.5rem 0;
+      }
+      &.skillsWrapper {
+        .columns {
+          div {
+            flex: 1 0 100%;
+            display: flex;
+            flex-direction: column;
+            &:nth-of-type(2) {
+              padding: 0;
+            }
+          }
+        }
       }
     }
   }

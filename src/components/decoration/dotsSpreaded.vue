@@ -28,9 +28,14 @@ div {
   z-index: 1;
   @extend %noselect;
 }
+@media screen and (max-width: 768px) {
+  img {
+    max-width: 90%;
+  }
+}
 @media screen and (max-width: 480px) {
   img {
-    max-width: 95%;
+    max-width: 80%;
   }
 }
 </style>

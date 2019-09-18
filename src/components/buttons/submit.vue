@@ -24,7 +24,7 @@ button {
   justify-content: center;
   width: 100%;
   border: 0;
-  margin: 1rem 0;
+  margin: 1rem 0 3rem 0;
   text-transform: uppercase;
   @extend %londrina-solid;
   @extend %typo-link;

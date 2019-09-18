@@ -23,9 +23,19 @@ div {
   }
   @extend %noselect;
 }
+@media screen and (max-width: 768px) {
+  div {
+    img {
+      max-width: 75%;
+    }
+  }
+}
 @media screen and (max-width: 480px) {
-  img {
-    max-width: 90%;
+  div {
+    left: 0;
+    img {
+      max-width: 80%;
+    }
   }
 }
 </style>

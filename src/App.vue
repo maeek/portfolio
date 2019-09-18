@@ -35,7 +35,7 @@ export default {
       collapsed: false,
       options: {
         scrollOverflow: true,
-        responsiveWidth: 480,
+        responsiveWidth: 769,
         animateAnchor: false,
         scrollingSpeed: 600,
         controlArrows: true,

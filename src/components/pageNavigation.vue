@@ -69,6 +69,9 @@ nav {
     right: 0.5rem;
     &.collapsed {
       right: 1rem;
+      a {
+        font-size: 1.3rem;
+      }
     }
   }
 }

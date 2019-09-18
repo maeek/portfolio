@@ -39,8 +39,23 @@ ul {
     flex-direction: column;
 }
 
-.fp-slides {
+.fp-scrollable {
     width: 100%;
+}
+
+.project {
+    .fp-tableCell {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
+
+.fp-slides,
+.fp-slide {
+    width: 100%;
+    padding: 0;
 }
 
 .fp-controlArrow.fp-next {

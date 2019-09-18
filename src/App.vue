@@ -4,10 +4,15 @@
     <page-navigation :collapsed="collapsed" />
     <full-page ref="fullpage" :options="options" id="fullpage">
       <landing @down="down" />
-      <section class="section">
-        <projects-landing class="slide" />
-        <project class="slide" />
-        <project class="slide" />
+      <section class="section fp-auto-height-responsive">
+        <projects-landing class="slide fp-auto-height-responsive" />
+        <project
+          class="slide fp-auto-height-responsive"
+          v-for="p in projects"
+          :key="p.title"
+          :project="p"
+          :data-anchor="p.title"
+        />
       </section>
       <skills />
       <contact />
@@ -36,19 +41,26 @@ export default {
       options: {
         scrollOverflow: true,
         responsiveWidth: 769,
+        responsiveHeight: 480,
         animateAnchor: false,
         scrollingSpeed: 600,
         controlArrows: true,
         loopHorizontal: false,
+        dragAndMove: true,
         verticalCentered: true,
         slidesNavigation: true,
-      	slidesNavPosition: 'bottom',
+        slidesNavPosition: "bottom",
         anchors: ["start", "projects", "skills", "contact", "copyright"],
         onLeave: (origin, destination) => {
           this.collapsed = destination.anchor != this.options.anchors[0];
         }
       }
     };
+  },
+  computed: {
+    projects() {
+      return this.$root.$data.projects;
+    }
   },
   components: {
     logo,
@@ -82,6 +94,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   section.section {
     display: flex;
+    background-color: $projects;
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;

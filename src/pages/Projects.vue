@@ -5,6 +5,12 @@
       <wave-header />
       <section-header>Projects</section-header>
     </div>
+    <div class="wrapper projectsWrapper">
+      <ul>
+        <li>This portfolio</li>
+        <li v-for="p in projects" :key="p.title">{{ p.title }}</li>
+      </ul>
+    </div>
   </article>
 </template>
 
@@ -18,6 +24,11 @@ export default {
     sectionHeader,
     dotsSpreaded,
     waveHeader
+  },
+  computed: {
+    projects() {
+      return this.$root.$data.projects;
+    }
   }
 };
 </script>
@@ -26,14 +37,14 @@ export default {
 .projects {
   height: 100%;
   width: 100%;
-  padding: 0 10%;
+  padding: 0;
   background-color: $projects;
   margin: 0;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
   .wrapper {
     display: flex;
@@ -46,18 +57,19 @@ export default {
       width: 100%;
       padding: 1rem;
       justify-content: flex-start;
-      align-items: flex-start;
+      align-items: center;
       flex-direction: column;
-      .columns {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        div {
-          flex: 1 0 50%;
-          &:nth-of-type(2) {
-            padding: 0 2rem;
-          }
+      ul {
+        text-align: center;
+        max-width: 95%;
+        min-width: 300px;
+        li {
+          padding: 0.5rem;
+          border: 2px solid lighten($blue, 5);
+          margin: 0.2rem 0;
+          width: 100%;
+          border-radius: 3px;
+          cursor: pointer;
         }
       }
     }

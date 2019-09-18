@@ -64,5 +64,4 @@ export default {
 //     font-size: 8rem;
 //   }
 // }
-
 </style>

@@ -1,5 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
+import "fullpage.js/vendors/scrolloverflow.min.js";
 import VueFullPage from "vue-fullpage.js";
 
 Vue.config.productionTip = false;
@@ -25,7 +26,7 @@ const store = {
       column: [
         { name: "HTML", description: "" },
         { name: "CSS", description: "" },
-        { name: "JavaScript/ES6+", description: "" },
+        { name: "JavaScript", description: "" },
         { name: "MySQL", description: "" },
         { name: "PHP", description: "" },
         { name: "SCSS", description: "" },
@@ -46,18 +47,18 @@ const store = {
     }
   ],
   projects: [
-    {
-      title: "",
-      links: {
-        live: "",
-        code: ""
-      },
-      description: "",
-      images: {
-        desktop: "",
-        mobile: ""
-      }
-    },
+    // {
+    //   title: "",
+    //   links: {
+    //     live: "",
+    //     code: ""
+    //   },
+    //   description: "",
+    //   images: {
+    //     desktop: "",
+    //     mobile: ""
+    //   }
+    // },
     {
       title: "Editor",
       links: {
@@ -66,8 +67,81 @@ const store = {
       },
       description: "Gist editor created with Vue.js",
       images: {
-        desktop: "",
-        mobile: ""
+        desktop: "editor-desktop",
+        mobile: "editor-mobile"
+      }
+    },
+    {
+      title: "VV-Chat",
+      links: {
+        live: "https://chat.eswomp.it/",
+        code: "https://github.com/maeek/vv-chat"
+      },
+      description: "WebSocket chat that doesn't save messages.",
+      images: {
+        desktop: "vv-desktop",
+        mobile: "vv-mobile"
+      }
+    },
+    {
+      title: "StreamLink",
+      links: {
+        live: null,
+        code: "https://github.com/maeek/streamLink"
+      },
+      description: "Get stream link for videos. Wrapper for: youtube-dl -g",
+      images: {
+        desktop: "streamLink-desktop",
+        mobile: "streamLink-mobile"
+      }
+    },
+    // {
+    //   title: "Local-library-webapp",
+    //   links: {
+    //     live: null,
+    //     code: "https://github.com/maeek/local-library-webapp"
+    //   },
+    //   description: "File browser written in node.js and vue.js",
+    //   images: {
+    //     desktop: "llw-desktop",
+    //     mobile: "llw-mobile"
+    //   }
+    // },
+    {
+      title: "PHP-WebShell",
+      links: {
+        live: null,
+        code: null
+      },
+      description:
+        "WebShell created in php, browsing, creating and deleting files",
+      images: {
+        desktop: "panel-desktop",
+        mobile: null
+      }
+    },
+    {
+      title: "Eswomp",
+      links: {
+        live: "https://eswomp.it/",
+        code: null
+      },
+      description: "Webapp written in PHP",
+      images: {
+        desktop: "eswomp-desktop",
+        mobile: "eswomp-mobile"
+      }
+    },
+    {
+      title: "dupnijlolka.pl",
+      links: {
+        live: "https://dupnijlolka.pl/",
+        code: null
+      },
+      description: "",
+      images: {
+        desktop: "dupnijlolka.pl-desktop",
+        mobile: "dupnijlolka.pl-mobile"
       }
     }
   ]

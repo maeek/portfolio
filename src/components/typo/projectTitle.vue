@@ -1,17 +1,17 @@
 <template>
-  <h2>
+  <h4>
     <slot></slot>
-  </h2>
+  </h4>
 </template>
 
 <script>
 export default {
-  name: "normalHeader"
+  name: "sectionHeader"
 };
 </script>
 
 <style scoped lang="scss">
-h2 {
+h4 {
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -21,16 +21,16 @@ h2 {
   z-index: 10;
   color: $basic;
   @extend %londrina-solid;
-  @extend %typo-header;
+  font-size: 3.5rem;
 }
 @media screen and (max-width: 768px) {
-  h2 {
-    font-size: 5rem;
+  h4 {
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 480px) {
-  h2 {
-    font-size: 3.8rem;
+  h4 {
+    font-size: 1.5rem;
   }
 }
 </style>

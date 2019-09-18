@@ -39,6 +39,7 @@ export default {
     margin: 0;
     &:nth-of-type(2) {
       margin-bottom: 2rem;
+      padding-top: 0.5rem;
     }
   }
 }

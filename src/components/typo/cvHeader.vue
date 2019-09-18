@@ -21,7 +21,7 @@ h3 {
   @extend %typo-cv-header;
 }
 @media screen and (max-width: 480px) {
-  h3{
+  h3 {
     font-size: 2rem;
   }
 }

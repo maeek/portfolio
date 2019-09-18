@@ -63,6 +63,14 @@ nav {
     }
   }
 }
+@media screen and (max-width: 786px) {
+  nav {
+    right: 1rem;
+    a {
+      margin: 0 0.8rem;
+    }
+  }
+}
 @media screen and (max-width: 480px) {
   nav {
     top: 1rem;

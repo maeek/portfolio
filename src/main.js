@@ -95,18 +95,18 @@ const store = {
         mobile: "streamLink-mobile"
       }
     },
-    // {
-    //   title: "Local-library-webapp",
-    //   links: {
-    //     live: null,
-    //     code: "https://github.com/maeek/local-library-webapp"
-    //   },
-    //   description: "File browser written in node.js and vue.js",
-    //   images: {
-    //     desktop: "llw-desktop",
-    //     mobile: "llw-mobile"
-    //   }
-    // },
+    {
+      title: "Local-library",
+      links: {
+        live: null,
+        code: "https://github.com/maeek/local-library-webapp"
+      },
+      description: "File browser written in node.js and vue.js",
+      images: {
+        desktop: "llw-desktop",
+        mobile: "llw-mobile"
+      }
+    },
     {
       title: "PHP-WebShell",
       links: {

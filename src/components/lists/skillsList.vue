@@ -25,4 +25,13 @@ export default {
   display: flex;
   justify-content: space-between;
 }
+.technologies {
+  ul {
+    list-style-position: inside;
+    list-style-type: square;
+    li {
+      line-height: 1.8rem;
+    }
+  }
+}
 </style>

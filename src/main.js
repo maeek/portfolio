@@ -1,5 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
+import VueFullPage from "vue-fullpage.js";
 
 Vue.config.productionTip = false;
 
@@ -43,8 +44,36 @@ const store = {
         { name: "Photoshop", description: "" }
       ]
     }
+  ],
+  projects: [
+    {
+      title: "",
+      links: {
+        live: "",
+        code: ""
+      },
+      description: "",
+      images: {
+        desktop: "",
+        mobile: ""
+      }
+    },
+    {
+      title: "Editor",
+      links: {
+        live: "https://editor.eswomp.it/",
+        code: "https://github.com/maeek/editor"
+      },
+      description: "Gist editor created with Vue.js",
+      images: {
+        desktop: "",
+        mobile: ""
+      }
+    }
   ]
 };
+
+Vue.use(VueFullPage);
 
 new Vue({
   data: store,

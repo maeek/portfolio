@@ -23,4 +23,9 @@ div {
   }
   @extend %noselect;
 }
+@media screen and (max-width: 480px) {
+  img {
+    max-width: 90%;
+  }
+}
 </style>

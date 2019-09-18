@@ -1,5 +1,5 @@
 <template>
-  <a :href="link">
+  <a :href="href">
     <slot></slot>
   </a>
 </template>
@@ -8,7 +8,7 @@
 export default {
   name: "navLink",
   props: {
-    link: String
+    href: String
   }
 };
 </script>
@@ -21,5 +21,14 @@ a {
   text-transform: uppercase;
   @extend %londrina-solid;
   @extend %typo-link;
+  &:hover {
+    color: $orange;
+  }
+}
+@media screen and (max-width: 480px) {
+  a {
+    margin: 0 0.4rem;
+    font-size: 1rem;
+  }
 }
 </style>

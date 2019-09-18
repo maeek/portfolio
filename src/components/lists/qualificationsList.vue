@@ -22,7 +22,6 @@ export default {
 <style scoped lang="scss">
 .qualifications {
   padding: 0;
-  list-style: none;
   li {
     padding: 1rem 0;
   }

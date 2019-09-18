@@ -1,9 +1,9 @@
 <template>
-  <nav ref="navigation">
-    <nav-link href="#">Home</nav-link>
-    <nav-link href="#">Project</nav-link>
-    <nav-link href="#">Skills</nav-link>
-    <nav-link href="#">Contact</nav-link>
+  <nav ref="navigation" :class="{ collapsed }">
+    <nav-link href="#start">Home</nav-link>
+    <nav-link href="#projects">Projects</nav-link>
+    <nav-link href="#skills">Skills</nav-link>
+    <nav-link href="#contact">Contact</nav-link>
   </nav>
 </template>
 
@@ -12,6 +12,12 @@ import navLink from "@/components/typo/navLink.vue";
 
 export default {
   name: "navigation",
+  props: {
+    collapsed: {
+      type: Boolean,
+      default: false
+    }
+  },
   components: {
     navLink
   },
@@ -54,6 +60,15 @@ nav {
     align-items: flex-end;
     a {
       margin: -0.1rem 0;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  nav {
+    top: 1rem;
+    right: 0.5rem;
+    &.collapsed {
+      right: 1rem;
     }
   }
 }

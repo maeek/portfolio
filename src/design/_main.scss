@@ -30,3 +30,45 @@ ul {
     @extend %koho;
     @extend %typo-basic;
 }
+
+.fp-tableCell {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fp-slides {
+    width: 100%;
+}
+
+.fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #fff;
+}
+
+.fp-controlArrow.fp-prev {
+    border-color: transparent #fff transparent transparent;
+}
+
+.fp-slidesNav {
+    display: flex;
+    justify-content: center;
+    ul li a {
+        &.active span {
+            background-color: $orange;
+        }
+        span {
+            background-color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fp-controlArrow.fp-next {
+        border-width: 1.5rem 0 1.5rem 1rem;
+    }
+    .fp-controlArrow.fp-prev {
+        border-width: 1.5rem 1rem 1.5rem 0;
+    }
+}

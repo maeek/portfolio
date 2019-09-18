@@ -23,8 +23,8 @@ export default {
 
 <style scoped lang="scss">
 h1 {
-  margin: 0;
   padding: 0;
+  margin: 0 1rem;
   font-weight: 400;
   display: flex;
   flex-direction: column;
@@ -38,5 +38,35 @@ h1 {
     @extend %londrina-solid;
   }
   @extend %typo-landing;
+}
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 13rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 10rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 4.3rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 3.5rem;
+  }
 }
 </style>

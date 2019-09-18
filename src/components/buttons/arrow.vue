@@ -99,4 +99,20 @@ export default {
 .arrow.up span {
   transform: rotate(225deg);
 }
+@media screen and (max-width: 480px) {
+  .arrow {
+    width: 5rem;
+    height: 5rem;
+    span {
+      &::before {
+        width: 2rem;
+        left: -2rem;
+      }
+      &::after {
+        height: 2rem;
+        top: -2rem;
+      }
+    }
+  }
+}
 </style>

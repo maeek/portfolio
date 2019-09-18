@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="@/assets/svg/logo.svg" />
+    <img draggable="false" src="@/assets/svg/logo.svg" />
   </div>
 </template>
 
@@ -21,6 +21,16 @@ div {
   img {
     height: 2rem;
     width: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  div {
+    left: 1.5rem;
+    top: 1rem;
+    img {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
   }
 }
 </style>

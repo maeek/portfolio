@@ -1,5 +1,5 @@
 <template>
-  <article class="skills">
+  <article class="section skills fp-auto-height-responsive" ref="section">
     <div class="wrapper headerWrapper">
       <dots-spreaded />
       <wave-header />
@@ -84,6 +84,20 @@ export default {
             padding: 0 2rem;
           }
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .skills {
+    align-items: flex-start;
+    justify-content: flex-start;
+    .wrapper {
+      &.headerWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 3.5rem 0;
       }
     }
   }

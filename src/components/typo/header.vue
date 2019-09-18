@@ -23,4 +23,9 @@ h2 {
   @extend %londrina-solid;
   @extend %typo-header;
 }
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 3.8rem;
+  }
+}
 </style>

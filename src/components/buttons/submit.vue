@@ -36,15 +36,6 @@ button {
   cursor: pointer;
   &:hover {
     text-shadow: -2px 1px 0px $green;
-    &:after {
-      opacity: 1;
-    }
-  }
-  &::after {
-    position: absolute;
-    content: "!";
-    right: 41%;
-    opacity: 0;
   }
 }
 </style>

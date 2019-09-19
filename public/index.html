@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="This page is my portfolio and buisness card. You can find information about me here as well as my works.">
+    <meta name="robots" content="index, follow" />
+    <meta property="og:url" content="https://maciej.suchanecki.me/" />
+    <meta property="og:title" content="Maciej Suchanecki - portfolio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="pl" />
+    <meta property="og:description" content="This page is my portfolio and buisness card. You can find information about me here as well as my works." />
+    <meta property="og:image" content="https://maciej.suchanecki.me/prev.png" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>portfolio</title>
-  </head>
-  <body>
+    <title>Maciej Suchanecki</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115436515-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-115436515-3');
+    </script>
+
+</head>
+
+<body>
     <noscript>
-      <strong>We're sorry but portfolio doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>We're sorry but this site doesn't work properly without JavaScript enabled. Teleport yourself to present times and enable it!</strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-  </body>
+</body>
+
 </html>

@@ -65,7 +65,7 @@ const store = {
         live: "https://editor.eswomp.it/",
         code: "https://github.com/maeek/editor"
       },
-      description: "Gist editor created with Vue.js",
+      description: "Gist editor created with Vue.js, CodeMirror",
       images: {
         desktop: "editor-desktop",
         mobile: "editor-mobile"
@@ -77,7 +77,8 @@ const store = {
         live: "https://chat.eswomp.it/",
         code: "https://github.com/maeek/vv-chat"
       },
-      description: "WebSocket chat that doesn't save messages.",
+      description:
+        "WebSocket chat that doesn't save messages. Express.js, Socket.io",
       images: {
         desktop: "vv-desktop",
         mobile: "vv-mobile"
@@ -89,7 +90,8 @@ const store = {
         live: null,
         code: "https://github.com/maeek/streamLink"
       },
-      description: "Get stream link for videos. Wrapper for: youtube-dl -g",
+      description:
+        "Get stream link for videos. Wrapper for: youtube-dl -g. Node.js",
       images: {
         desktop: "streamLink-desktop",
         mobile: "streamLink-mobile"
@@ -114,7 +116,7 @@ const store = {
         code: null
       },
       description:
-        "WebShell created in php, browsing, creating and deleting files",
+        "WebShell created in php, browsing, creating and deleting files. PHP, JQuery",
       images: {
         desktop: "panel-desktop",
         mobile: null
@@ -126,7 +128,7 @@ const store = {
         live: "https://eswomp.it/",
         code: null
       },
-      description: "Webapp written in PHP",
+      description: "Webapp written in PHP, JQuery",
       images: {
         desktop: "eswomp-desktop",
         mobile: "eswomp-mobile"
@@ -138,7 +140,7 @@ const store = {
         live: "https://dupnijlolka.pl/",
         code: null
       },
-      description: "",
+      description: "PHP, JQuery",
       images: {
         desktop: "dupnijlolka.pl-desktop",
         mobile: "dupnijlolka.pl-mobile"

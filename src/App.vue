@@ -4,6 +4,7 @@
     <page-navigation :collapsed="collapsed" />
     <full-page ref="fullpage" :options="options" id="fullpage">
       <landing @down="down" />
+      <about />
       <section class="section fp-auto-height-responsive">
         <projects-landing class="slide fp-auto-height-responsive" />
         <project
@@ -26,6 +27,7 @@ import landing from "@/pages/Landing.vue";
 import projectsLanding from "@/pages/Projects.vue";
 import project from "@/pages/Project.vue";
 import footerComponent from "@/pages/Footer.vue";
+import about from "@/pages/About.vue";
 import skills from "@/pages/Skills.vue";
 import contact from "@/pages/Contact.vue";
 import logo from "@/components/decoration/logo.vue";
@@ -50,7 +52,7 @@ export default {
         verticalCentered: true,
         slidesNavigation: true,
         slidesNavPosition: "bottom",
-        anchors: ["start", "projects", "skills", "contact", "copyright"],
+        anchors: ["start", "about", "projects", "skills", "contact", "copyright"],
         onLeave: (origin, destination) => {
           this.collapsed = destination.anchor != this.options.anchors[0];
         }
@@ -65,6 +67,7 @@ export default {
   components: {
     logo,
     landing,
+    about,
     skills,
     projectsLanding,
     project,

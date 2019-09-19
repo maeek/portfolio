@@ -18,6 +18,14 @@
         <img draggable="false" src="@/assets/svg/linkedin.svg" />
         <span>maciej-suchanecki</span>
       </a>
+      <a
+        target="_blank"
+        href="mailto:maciej@suchanecki.me"
+        class="link"
+      >
+        <img draggable="false" src="@/assets/svg/at.svg" />
+        <span>maciej@suchanecki.me</span>
+      </a>
     </div>
     <div class="wrapper contactWrapper">
       <form>
@@ -88,13 +96,14 @@ export default {
       padding: 0 1rem;
       z-index: 15;
       .link {
-        flex: 1 1 auto;
+        flex: 1 0 auto;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         text-decoration: none;
         @extend %koho;
         font-weight: 900;
+        margin: 0.3rem;
         span {
           color: lighten(#5b8bfb, 15);
           margin: 0 0.5rem;
@@ -137,6 +146,9 @@ export default {
     .wrapper {
       &.headerWrapper {
         margin: 3rem 0;
+      }
+      &.wrapperHoriz {
+        flex-wrap: wrap;
       }
     }
   }

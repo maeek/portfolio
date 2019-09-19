@@ -1,6 +1,7 @@
 <template>
   <nav ref="navigation" :class="{ collapsed }">
     <nav-link href="#start">Home</nav-link>
+    <nav-link href="#about">About Me</nav-link>
     <nav-link href="#projects">Projects</nav-link>
     <nav-link href="#skills">Skills</nav-link>
     <nav-link href="#contact">Contact</nav-link>

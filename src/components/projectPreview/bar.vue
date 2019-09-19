@@ -40,10 +40,11 @@ export default {
     justify-content: center;
     align-items: center;
     .btn {
-      width: 0.6rem;
-      height: 0.6rem;
+      width: 10px;
+      height: 10px;
+      flex: 0 0 10px;
       border-radius: 50%;
-      margin: 0 0.1rem;
+      margin: 0.15rem;
       &.min {
         background-color: $orange;
       }

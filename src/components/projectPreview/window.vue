@@ -14,8 +14,8 @@ export default {
   },
   methods: {
     getImgUrl(pic) {
-      const images = require.context("@/assets/previews/", false, /\.png$/);
-      return images("./" + pic + ".png");
+      const images = require.context("@/assets/previews/", false, /\.jpg$/);
+      return images("./" + pic + ".jpg");
     }
   },
   props: {

@@ -1,6 +1,11 @@
 <template>
   <div>
-    <img ref="img" src="@/assets/svg/dotsSpreaded.svg" />
+    <img
+      aria-hidden="true"
+      alt="Dots decoration"
+      ref="img"
+      src="@/assets/svg/dotsSpreaded.svg"
+    />
   </div>
 </template>
 

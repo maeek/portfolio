@@ -65,6 +65,7 @@ export default {
         text-align: center;
         max-width: 95%;
         min-width: 300px;
+        margin-bottom: 2.5rem;
         li {
           padding: 0.5rem;
           margin: 0.2rem 0;

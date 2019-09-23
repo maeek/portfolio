@@ -18,11 +18,7 @@
         <img draggable="false" src="@/assets/svg/linkedin.svg" />
         <span>maciej-suchanecki</span>
       </a>
-      <a
-        target="_blank"
-        href="mailto:maciej@suchanecki.me"
-        class="link"
-      >
+      <a target="_blank" href="mailto:maciej@suchanecki.me" class="link">
         <img draggable="false" src="@/assets/svg/at.svg" />
         <span>maciej@suchanecki.me</span>
       </a>
@@ -72,7 +68,7 @@ export default {
 <style scoped lang="scss">
 .contact {
   height: 100%;
-  padding: 0 10%;
+  padding: 0;
   background-color: $contact;
   margin: 0;
   position: relative;
@@ -93,6 +89,7 @@ export default {
       justify-content: space-evenly;
       width: 100%;
       max-width: 600px;
+      margin: 0 auto;
       padding: 0 1rem;
       z-index: 15;
       .link {
@@ -125,7 +122,7 @@ export default {
       max-width: 600px;
       width: 100%;
       padding: 0 1rem;
-      margin: 0;
+      margin: 0 auto;
       justify-content: center;
       align-items: center;
       flex-direction: column;

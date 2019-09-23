@@ -51,9 +51,9 @@ export default {
 <style scoped lang="scss">
 .skills {
   height: 100%;
-  padding: 0 10%;
+  padding: 0;
   background-color: $skills;
-  margin: 0;
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -77,6 +77,7 @@ export default {
       flex-wrap: wrap;
       .columns {
         width: 100%;
+        padding: 0 10%;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -104,7 +105,9 @@ export default {
         margin: 3.5rem 0;
       }
       &.skillsWrapper {
+        padding: 1rem 0;
         .columns {
+          padding: 0 0.5rem;
           div {
             flex: 1 0 100%;
             display: flex;

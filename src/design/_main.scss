@@ -39,6 +39,10 @@ ul {
     flex-direction: column;
 }
 
+.about .fp-tableCell {
+    justify-content: flex-start;
+}
+
 .fp-scrollable {
     width: 100%;
 }
@@ -77,6 +81,28 @@ ul {
             background-color: #fff;
         }
     }
+}
+
+#fp-nav {
+    top: 130px;
+    ul {
+        li {
+            a span {
+                background-color: #fff;
+            }
+            a.active span {
+                background-color: $orange;
+            }
+        }
+    }
+}
+
+#fp-nav.fp-left {
+    left: 3rem;
+}
+
+.fp-tooltip {
+    @extend %koho;
 }
 
 @media screen and (max-width: 480px) {

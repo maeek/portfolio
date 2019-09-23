@@ -37,4 +37,9 @@ textarea {
     border: 2px solid $green;
   }
 }
+@media screen and (max-width: 480px) {
+  textarea {
+    border-radius: 4px;
+  }
+}
 </style>

@@ -1,6 +1,10 @@
 <template>
   <div>
-    <img src="@/assets/svg/waveProject.svg" />
+    <img
+      aria-hidden="true"
+      alt="Project wave"
+      src="@/assets/svg/waveProject.svg"
+    />
   </div>
 </template>
 

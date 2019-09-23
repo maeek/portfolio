@@ -1,6 +1,12 @@
 <template>
   <footer>
-    <img draggable="false" src="@/assets/svg/logo.svg" width="28" />
+    <img
+      draggable="false"
+      aria-hidden="true"
+      alt="Logo"
+      src="@/assets/svg/logo.svg"
+      width="28"
+    />
     <h3><span>&copy;</span> Maciej Suchanecki 2019</h3>
   </footer>
 </template>

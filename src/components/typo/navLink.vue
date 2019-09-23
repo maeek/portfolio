@@ -1,5 +1,5 @@
 <template>
-  <a :href="href">
+  <a :href="href" :class="{ active: show }">
     <slot></slot>
   </a>
 </template>
@@ -8,7 +8,13 @@
 export default {
   name: "navLink",
   props: {
-    href: String
+    href: String,
+    active: String
+  },
+  computed: {
+    show() {
+      return this.active.includes(this.href);
+    }
   }
 };
 </script>
@@ -22,6 +28,9 @@ a {
   @extend %londrina-solid;
   @extend %typo-link;
   &:hover {
+    color: $orange;
+  }
+  &.active {
     color: $orange;
   }
 }

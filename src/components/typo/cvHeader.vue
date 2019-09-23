@@ -12,7 +12,7 @@ export default {
 
 <style scoped lang="scss">
 h3 {
-  margin: 0;
+  margin: 0 10%;
   padding: 0;
   display: flex;
   font-weight: 900;
@@ -23,6 +23,7 @@ h3 {
 @media screen and (max-width: 480px) {
   h3 {
     font-size: 2rem;
+    margin: 0 0.5rem;
   }
 }
 </style>

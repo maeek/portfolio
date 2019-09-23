@@ -1,6 +1,12 @@
 <template>
   <div>
-    <img @click="reload" draggable="false" src="@/assets/svg/logo.svg" />
+    <img
+      aria-hidden="true"
+      alt="Logo"
+      @click="reload"
+      draggable="false"
+      src="@/assets/svg/logo.svg"
+    />
   </div>
 </template>
 

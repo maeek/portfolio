@@ -133,18 +133,6 @@ const store = {
         desktop: "eswomp-desktop",
         mobile: "eswomp-mobile"
       }
-    },
-    {
-      title: "dupnijlolka.pl",
-      links: {
-        live: "https://dupnijlolka.pl/",
-        code: null
-      },
-      description: "PHP, JQuery",
-      images: {
-        desktop: "dupnijlolka.pl-desktop",
-        mobile: "dupnijlolka.pl-mobile"
-      }
     }
   ]
 };

@@ -1,10 +1,10 @@
 <template>
   <nav ref="navigation" :class="{ collapsed }">
-    <nav-link href="#start">Home</nav-link>
-    <nav-link href="#about">About Me</nav-link>
-    <nav-link href="#projects">Projects</nav-link>
-    <nav-link href="#skills">Skills</nav-link>
-    <nav-link href="#contact">Contact</nav-link>
+    <nav-link :active="link" href="#start">Home</nav-link>
+    <nav-link :active="link" href="#about">About Me</nav-link>
+    <nav-link :active="link" href="#skills">Skills</nav-link>
+    <nav-link :active="link" href="#projects">Projects</nav-link>
+    <nav-link :active="link" href="#contact">Contact</nav-link>
   </nav>
 </template>
 
@@ -22,26 +22,27 @@ export default {
   components: {
     navLink
   },
+  data() {
+    return {
+      active: "#start"
+    };
+  },
+  computed: {
+    link() {
+      return this.active;
+    }
+  },
   methods: {
-    collapse() {
-      this.$refs.navigation.classList.add("collapsed");
-    },
-    expand() {
-      this.$refs.navigation.classList.remove("collapsed");
-    },
-    eventHandler() {
-      const bd = document.querySelector("#app");
-      if (bd.scrollTop >= bd.clientHeight * 0.5) {
-        this.collapse();
-      } else {
-        this.expand();
-      }
+    hsh() {
+      this.active = location.hash;
     }
   },
   mounted() {
-    document
-      .querySelector("#app")
-      .addEventListener("scroll", this.eventHandler, false);
+    this.active = location.hash;
+    window.addEventListener("hashchange", this.hsh);
+  },
+  beforeDestroy() {
+    window.removeEventListener("hashchange", this.hsh);
   }
 };
 </script>

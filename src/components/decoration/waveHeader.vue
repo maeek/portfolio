@@ -1,6 +1,10 @@
 <template>
   <div>
-    <img src="@/assets/svg/waveHeader.svg" />
+    <img
+      aria-hidden="true"
+      alt="Header wave"
+      src="@/assets/svg/waveHeader.svg"
+    />
   </div>
 </template>
 

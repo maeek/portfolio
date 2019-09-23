@@ -11,12 +11,14 @@
             target="_blank"
             v-if="project.links.live"
             :href="project.links.live"
+            rel="noreferrer"
             >Live</a
           >
           <a
             target="_blank"
             v-if="project.links.code"
             :href="project.links.code"
+            rel="noreferrer"
             >Code</a
           >
         </div>

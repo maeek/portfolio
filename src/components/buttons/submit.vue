@@ -38,4 +38,11 @@ button {
     text-shadow: -2px 1px 0px $green;
   }
 }
+@media screen and (max-width: 480px) {
+  button {
+    padding: 0.4rem 0;
+    font-size: 1.2rem;
+    border-radius: 4px;
+  }
+}
 </style>

@@ -1,9 +1,11 @@
 <template>
   <div class="techWrapper">
     <ul class="technologies" v-for="(tech, i) in technologies" :key="i">
-      <ul v-for="t in tech.column" :key="t.name">
-        <li>{{ t.name }}</li>
-      </ul>
+      <li>
+        <ul>
+          <li v-for="t in tech.column" :key="t.name">{{ t.name }}</li>
+        </ul>
+      </li>
     </ul>
   </div>
 </template>
@@ -29,6 +31,7 @@ export default {
   ul {
     list-style-position: inside;
     list-style-type: square;
+    min-width: 10rem;
     li {
       line-height: 1.8rem;
     }

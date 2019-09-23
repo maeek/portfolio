@@ -4,7 +4,8 @@
     <page-navigation :collapsed="collapsed" />
     <full-page ref="fullpage" :options="options" id="fullpage">
       <landing @down="down" />
-      <about />
+      <about @down="down" />
+      <skills />
       <section class="section fp-auto-height-responsive">
         <projects-landing class="slide fp-auto-height-responsive" />
         <project
@@ -15,7 +16,6 @@
           :data-anchor="p.title"
         />
       </section>
-      <skills />
       <contact />
       <footer-component class="section fp-auto-height" />
     </full-page>
@@ -52,7 +52,14 @@ export default {
         verticalCentered: true,
         slidesNavigation: true,
         slidesNavPosition: "bottom",
-        anchors: ["start", "about", "projects", "skills", "contact", "copyright"],
+        anchors: [
+          "start",
+          "about",
+          "skills",
+          "projects",
+          "contact",
+          "copyright"
+        ],
         onLeave: (origin, destination) => {
           this.collapsed = destination.anchor != this.options.anchors[0];
         }

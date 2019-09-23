@@ -44,4 +44,9 @@ input {
     border: 2px solid $green;
   }
 }
+@media screen and (max-width: 480px) {
+  input {
+    border-radius: 4px;
+  }
+}
 </style>

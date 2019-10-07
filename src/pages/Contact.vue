@@ -50,7 +50,7 @@
       </a>
     </div>
     <div class="wrapper contactWrapper">
-      <form>
+      <!-- <form>
         <label>
           <tiny-title>Email</tiny-title>
           <input-component type="email" :required="true" name="email" />
@@ -64,7 +64,7 @@
           <message name="message"></message>
         </label>
         <submit-button>HIT ME UP</submit-button>
-      </form>
+      </form> -->
     </div>
   </article>
 </template>
@@ -108,10 +108,10 @@ export default {
     align-items: center;
     justify-content: center;
     &.headerWrapper {
-      margin: 8rem 0 4rem 0;
+      margin: 10rem 0 4rem 0;
     }
     &.wrapperHoriz {
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-evenly;
       width: 100%;
       max-width: 600px;
@@ -126,7 +126,7 @@ export default {
         text-decoration: none;
         @extend %koho;
         font-weight: 900;
-        margin: 0.3rem;
+        margin: 1rem 0.3rem;
         span {
           color: lighten(#5b8bfb, 15);
           margin: 0 0.5rem;
@@ -147,7 +147,7 @@ export default {
     &.contactWrapper {
       max-width: 600px;
       width: 100%;
-      padding: 0 1rem;
+      padding: 2rem 1rem;
       margin: 0 auto;
       justify-content: center;
       align-items: center;

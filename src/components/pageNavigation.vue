@@ -35,6 +35,7 @@ export default {
   methods: {
     hsh() {
       this.active = location.hash;
+      this.$nextTick();
     }
   },
   mounted() {

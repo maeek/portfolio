@@ -61,6 +61,9 @@ export default {
   .arrow {
     margin: 0 auto;
     left: 50%;
+    bottom: 0;
+    position: absolute;
+    transform: translateX(-50%);
   }
   .wrapper {
     display: flex;

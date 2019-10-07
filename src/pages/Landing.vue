@@ -1,7 +1,8 @@
 <template>
   <article class="section landing">
-    <dots-medium />
+    <logo />
     <dots-small />
+    <decoration />
     <large-header></large-header>
     <div class="arrowWrapper">
       <arrow-down @click.native="down" />
@@ -10,17 +11,19 @@
 </template>
 
 <script>
+import logo from "@/components/decoration/logo.vue";
 import largeHeader from "@/components/typo/largeHeader.vue";
-import dotsMedium from "@/components/decoration/dotsMedium.vue";
+import decoration from "@/components/decoration/decoration.vue";
 import dotsSmall from "@/components/decoration/dotsSmall.vue";
 import arrowDown from "@/components/buttons/arrow.vue";
 export default {
   name: "Landing",
   components: {
     largeHeader,
-    dotsMedium,
+    decoration,
     dotsSmall,
-    arrowDown
+    arrowDown,
+    logo
   },
   methods: {
     down() {
@@ -34,13 +37,14 @@ export default {
 .landing {
   height: 100%;
   width: 100%;
-  padding: 0;
+  padding: 0 5%;
   margin: 0;
   position: relative;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
   .arrowWrapper {
     position: absolute;
     bottom: 0;
@@ -57,11 +61,6 @@ export default {
 // @media screen and (max-width: 992px) {
 //   h1 {
 //     font-size: 10rem;
-//   }
-// }
-// @media screen and (max-width: 768px) {
-//   h1 {
-//     font-size: 8rem;
 //   }
 // }
 </style>

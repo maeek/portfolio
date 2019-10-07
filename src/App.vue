@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <logo />
     <page-navigation :collapsed="collapsed" />
     <full-page ref="fullpage" :options="options" id="fullpage">
       <landing @down="down" />
@@ -30,7 +29,6 @@ import footerComponent from "@/pages/Footer.vue";
 import about from "@/pages/About.vue";
 import skills from "@/pages/Skills.vue";
 import contact from "@/pages/Contact.vue";
-import logo from "@/components/decoration/logo.vue";
 import pageNavigation from "@/components/pageNavigation.vue";
 import "fullpage.js/dist/fullpage.css";
 
@@ -72,7 +70,6 @@ export default {
     }
   },
   components: {
-    logo,
     landing,
     about,
     skills,

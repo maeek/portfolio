@@ -23,9 +23,9 @@ export default {
 
 <style scoped lang="scss">
 div {
-  position: fixed;
-  left: 3rem;
-  top: 2rem;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
   overflow: hidden;
   display: flex;
   z-index: 100;

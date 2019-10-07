@@ -24,7 +24,16 @@
         </div>
       </div>
     </div>
-    <p>{{ project.description }}</p>
+    <p>
+      {{ project.description }}
+      <span v-if="project.credentials">
+        Credentials&nbsp;&nbsp;
+        <b>login:</b>&nbsp;<u>{{ project.credentials.login }}</u
+        >&nbsp;&nbsp; <b>password:</b>&nbsp;<u>{{
+          project.credentials.pass
+        }}</u>
+      </span>
+    </p>
     <div class="wrapper wrapperContent">
       <window
         device="Desktop"
@@ -117,6 +126,9 @@ export default {
       flex-direction: row;
     }
   }
+}
+u {
+  text-decoration: underline $orange;
 }
 @media screen and (max-width: 768px) {
   .project {

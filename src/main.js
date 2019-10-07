@@ -128,7 +128,11 @@ const store = {
         live: "https://eswomp.it/",
         code: null
       },
-      description: "Webapp written in PHP, JQuery",
+      description: "Webapp written in PHP, JQuery.",
+      credentials: {
+        login: "public",
+        pass: "suchanecki"
+      },
       images: {
         desktop: "eswomp-desktop",
         mobile: "eswomp-mobile"

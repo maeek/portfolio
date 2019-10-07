@@ -68,20 +68,14 @@ nav {
 @media screen and (max-width: 786px) {
   nav {
     right: 1rem;
-    a {
-      margin: 0 0.8rem;
-    }
   }
 }
 @media screen and (max-width: 480px) {
   nav {
-    top: 1rem;
+    top: 1.3rem;
     right: 0.5rem;
     &.collapsed {
       right: 1rem;
-      a {
-        font-size: 1.3rem;
-      }
     }
   }
 }

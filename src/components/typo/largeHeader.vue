@@ -1,23 +1,16 @@
 <template>
   <h1>
-    <span>{{ name }}</span>
-    <span>{{ last }}</span>
+    <span>I create</span>
+    <span>web applications</span>
+    <span>that perform</span>
+    <span class="small">Aspiring Fullstack developer</span>
+    <span class="smaller">Maciej Suchanecki</span>
   </h1>
 </template>
 
 <script>
 export default {
-  name: "largeHeader",
-  props: {
-    name: {
-      type: String,
-      default: "Maciej"
-    },
-    last: {
-      type: String,
-      default: "Suchanecki"
-    }
-  }
+  name: "largeHeader"
 };
 </script>
 
@@ -25,48 +18,87 @@ export default {
 h1 {
   padding: 0;
   margin: 0 1rem;
-  font-weight: 400;
+  font-weight: 700;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  span:nth-of-type(1) {
-    color: $orange;
-    @extend %londrina-shadow;
-  }
-  span:nth-of-type(2) {
-    color: $blue;
-    @extend %londrina-solid;
-  }
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: flex-start;
+  color: #fff;
+  @extend %koho;
   @extend %typo-landing;
+  .small {
+    font-size: 2rem;
+    color: darken(#fff, 15%);
+  }
+  .smaller {
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: $orange;
+    background-color: #000;
+    padding: 0.1rem;
+  }
 }
 @media screen and (max-width: 1200px) {
   h1 {
-    font-size: 13rem;
+    font-size: 5rem;
+    .small {
+      font-size: 2rem;
+    }
   }
 }
 @media screen and (max-width: 992px) {
   h1 {
-    font-size: 10rem;
+    font-size: 4rem;
+    .small {
+      font-size: 2rem;
+    }
+  }
+}
+@media screen and (max-height: 550px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 992px) and (max-height: 450px) {
+  h1 {
+    font-size: 1.5rem;
+    .small {
+      font-size: 1rem;
+    }
   }
 }
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 8rem;
+    font-size: 3rem;
+    .small {
+      font-size: 1.6rem;
+    }
   }
 }
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 6rem;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 4.3rem;
+    font-size: 2rem;
+    .small {
+      font-size: 1rem;
+    }
+    .smaller {
+      margin-top: 3rem;
+    }
   }
 }
 @media screen and (max-width: 320px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
+    .small {
+      font-size: 0.8rem;
+    }
   }
 }
 </style>

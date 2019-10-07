@@ -6,20 +6,46 @@
       <section-header>Contact</section-header>
     </div>
     <div class="wrapper wrapperHoriz">
-      <a target="_blank" href="https://github.com/maeek" class="link">
-        <img draggable="false" src="@/assets/svg/github.svg" />
+      <a
+        target="_blank"
+        href="https://github.com/maeek"
+        rel="noreferrer"
+        class="link"
+      >
+        <img
+          draggable="false"
+          alt="Github logo"
+          aria-hidden="true"
+          src="@/assets/svg/github.svg"
+        />
         <span>maeek</span>
       </a>
       <a
         target="_blank"
         href="https://linkedin.com/in/maciej-suchanecki/"
         class="link"
+        rel="noreferrer"
       >
-        <img draggable="false" src="@/assets/svg/linkedin.svg" />
+        <img
+          draggable="false"
+          alt="LinkedIn logo"
+          aria-hidden="true"
+          src="@/assets/svg/linkedin.svg"
+        />
         <span>maciej-suchanecki</span>
       </a>
-      <a target="_blank" href="mailto:maciej@suchanecki.me" class="link">
-        <img draggable="false" src="@/assets/svg/at.svg" />
+      <a
+        target="_blank"
+        href="mailto:maciej@suchanecki.me"
+        class="link"
+        rel="noreferrer"
+      >
+        <img
+          draggable="false"
+          alt="At logo"
+          aria-hidden="true"
+          src="@/assets/svg/at.svg"
+        />
         <span>maciej@suchanecki.me</span>
       </a>
     </div>

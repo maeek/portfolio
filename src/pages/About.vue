@@ -60,7 +60,6 @@ export default {
   flex-direction: column;
   .arrow {
     margin: 0 auto;
-    bottom: 0;
     left: 50%;
   }
   .wrapper {
@@ -81,8 +80,19 @@ export default {
       max-width: 800px;
       color: #fff;
       @extend %koho;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       line-height: 2.2rem;
+    }
+  }
+}
+@media screen and (max-width: 992px) and (max-height: 450px) {
+  .about {
+    .wrapper {
+      &.aboutWrapper {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
     }
   }
 }
